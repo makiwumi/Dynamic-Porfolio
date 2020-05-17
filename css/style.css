@@ -5,7 +5,7 @@
 }
 body{
     font-family: fantasy;
-    background-color: grey;
+    background-color: #212121
 }
 
 #homePage,
@@ -31,45 +31,18 @@ a {
 }
 
 #homePage{
-    background-color: tomato;
+    background-color: black;
 }
 #aboutPage {
-    background-color: teal;
+    background-color: black;
 }
 #porfolioPage {
-    background-color: violet;
+    background-color: black;
 }
 #contactPage {
-    background-color: yellow;
+    background-color: black;
 }
 
 /*
 *keyframes for animations
 */
-
-@keyframes fadeInRight {
-    0%{
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-/* css page transitions */
-
-.m-scene {
-    .scene_element {
-        animation-duration: 0.25s;
-        transition-timing-function: ease-in;
-        animation-fill-mode: both;
-    }
-
-    .scene_elemnet--fadeinright {
-        animation-name: fadeInRight;
-    }
-}
-
