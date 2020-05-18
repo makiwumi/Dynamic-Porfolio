@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aqua;
+    color: white;
     width: 100%;
     flex-direction: column;
     position: absolute;
@@ -43,6 +43,84 @@ a {
     background-color: black;
 }
 
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > .box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container > .box > .title {
+    width:100%;
+    position: relative;
+    height: 50px;
+
+}
+
+.container > .box > .title > .block {
+    width: 0%;
+    height: inherit;
+    background-color: #ffb510;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(.74, .06,.4, .92) forwards;
+}
+
+.container > .box > .title > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    font-size: 32px;
+    -webkit-animation: mainFadeIn 2s forwards;
+    -o-animation: mainFadeIn 2s forwards;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+}
+
+.container > .box > h1 > span{
+    color: #ffb510
+}
+
+.container > .box > .role {
+    width: 100%;
+    position: relative;
+    height: 30px;
+    margin-top: -10px; 
+    display: flex;
+    align-items: center;
+}
+
+.container > .box > .role > .block {
+    width: 0%;
+    height: inherit;
+    background: #e91e63;
+    position:absolute;
+    animation: secBlock 2s cubic-bezier(.74,.06,.4,.92);
+}
+
+.container > .box > .role > p {
+    -webkit-animation: secFadeIn 2s forwards;
+    -o-animation: secFadeIn 2s forwards;
+    animation: secFadeIn 2s forwards; 
+    animation-delay: 3.2s;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+ 
+
+@keyframes mainblock {
+    0%
+}
 /*
 *keyframes for animations
 */
