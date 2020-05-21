@@ -7,19 +7,15 @@ body {
     padding: 0;
 
 }
-.nav {
-    color: white;
+
+.my-navbar {
+    background: black;
+    border-radius: 0;
+    border: 0;
 }
 
-.navbar {
-    background: pink;
-    overflow: hidden;
-}
-.navbar .navbar-brand {
-    color:green;
-}
-.navbar .navbar-nav > li > a {
-    color: red;
+.my-navbar > .navbar-brand {
+    color:white;
 }
 
 #section1{
