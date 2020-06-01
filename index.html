@@ -1,120 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- animated css -->
     <link rel="stylesheet" href="css/animate.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css" />
+   
     <!-- Animate.css script for font slide in -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <!-- bootstrap css & font awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/218afa11de.js" crossorigin="anonymous"></script>
-   
+    <!-- skills icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- flickity horizontal slider for responsive -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css"/>
+
     <title>Marian Akiwumi</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <a class="navbar-brand logo-text page-scroll" href="#">{ MARIAN }</a>
 
-        <nav class="navbar">
-            <h1>Marian</h1>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#about">Skills</a></li>
-                <li><a href="#about">My Work</a></li>
-                <li><a href="#about">Contact</a></li>
+        <!-- Image Logo -->
+        <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#skills">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#work">WORKS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
             </ul>
-        </nav>
-        
-        <!-- Title page with reveal blocks -->
-        <section>
-            <div class="container main-title-section">
-                <h1 class="rev-block">
-                    <span>hello there</span>
-                </h1>
-            </div>
-        </section>
-        
-         <!-- About header on left top. Info box left middle overlapping with shadow, pic on left overlapping about info-->
-        <section> 
-            <div class="container about" id="about">
-                <h1>About</h1>
-                <div class="about-info">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                </div>
-                <div class="profile-image">
-                    <img src="#" alt="">
-                </div>
-            </div>
-        </section>
-        
-         <!-- Skills header top right with language/application icons in info box.  -->
-        <section>
-            <div class="container skills" id="skills">
-                <h1>Skills</h1>
-                <p class="skills-info">
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                </p>
-            </div>
-        </section>
-        
-        <!-- Work header top left, website images in grids to display -->
-        <section>
-            <div class="container work" id="work">
-                <h1>Work</h1>
-                <div class="work-display">
-                    <a href=""><img src=""></a>
-                    <a href=""><img src=""></a>
-                    <a href=""><img src=""></a>
-                    <a href=""><img src=""></a>
-                    <a href=""><img src=""></a>
-                    <a href=""><img src=""></a>
-                </div>
-            </div>
-        </section>
-        
-        
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+    
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container" id="home-section">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>HELLO!<span></span></h1>
+                            <h1>I AM <span></I></h1>
+                            <h1>MARIAN <span></MARIAN></h1>
+                            <div class="line"></div>
+                            <p>Full stack web developer<span></span></p> 
+                        </div>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </header> 
+    <!-- end of header -->
 
-        <!-- contact header on right, form box -->
-        <section>
-            <div class="container contact" id="contact">
-                <h1>Contact</h1>
-                <form>
-                    <input type="text" name="name" placeholder="Full Name">
-                    <input type="text" name="name" placeholder="Full Name">
-                    <input type="text" name="name" placeholder="Full Name">
-                    <textarea name="message" cols="30" rows="10" placeholder="Type Message"></textarea>
-                    <input type="submit">
-                </form>
+    <!-- About header on left top. Info box left middle overlapping with shadow, pic onright overlapping about info-->
+    <div id="about" class="section">
+        <div class="about container">
+            <div class="row">
+                <!-- Picture column -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="about-img">
+                        <img src="imgs/IMG_2621-Edit.jpg" alt="alternative">
+                    </div>
+                </div>
+                <!-- About text section -->
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="about-section">
+                        <div class="about-title">
+                            <h1>About</h1>
+                            <div class="line"></div>
+                            <h2>Full Stack Web Developer</h2>
+                        </div>
+                        <p>I am a full-stack web developer experienced in HTML, CSS, Bootstrap and JavaScript that specializes in front-end web development and applications. In my previous career as a Medical Laboratory Scientist, I worked with laboratory information systems. I was able to team up with programmers to design and improve workflow in the lab. I have enjoyed designing and creating websites since beginning my journey at the Johns Hopkins coding bootcamp. With my background in Art, Photography and my interest in programming, I was recently motivated to turn my passion into a career.  I’m looking forward to optimizing user experience through design with a team where I can grow, create and learn to master these skills.</p>
+                    </div>
+                </div>
             </div>
-        </section>
-        
+        </div>
+    </div>
 
-        <footer>
+    <!-- Skills header top right with language/application icons in info box.  -->
+    <div id="skills" class="section">
+        <div class="skills container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="skill-title">
+                        <h1> Skills</h1>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work header top left, website images in grids to display -->
+    <div id="work" class="section">
+        <div class="work-title">
+            <h1><span>Works</span></h1>
+            <div class="line"></div>
+        </div>
+        <div class="work container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="bg-img"></div>
+                        <div class="content">
+                            <h4>card title</h4>
+                            <p>dkjfadjfakjfal</p><button>check it out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="bg-img"></div>
+                        <div class="content">
+                            <h4>card title</h4>
+                            <p>dkjfadjfakjfal</p><button>check it out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="bg-img"></div>
+                        <div class="content">
+                            <h4>card title</h4>
+                            <p>dkjfadjfakjfal</p><button>check it out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="bg-img"></div>
+                        <div class="content">
+                            <h4>card title</h4>
+                            <p>dkjfadjfakjfal</p><button>check it out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact header on right, form box -->
+    <!-- <div id="contact" class="section">
+        <h1>Contact</h1>
+        <form>
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="text" name="name" placeholder="Full Name">
+            <textarea name="message" cols="30" rows="10" placeholder="Type Message"></textarea>
+            <input type="submit">
+        </form>
+    </div> -->
+
+
+
+   <footer>
             <hr>
             <ul class="contact-icons">
                 <li><a href="https://www.linkedin.com/in/makiwumi/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i><p>LinkedIn</p></a></li>
                 <li><a href="https://github.com/makiwumi" target="_blank" rel="noreferrer noopener"><i class="fab fa-github"></i><p>GitHub</p></a></li>
                 <li><a href="mailto:mfakiwumi@gmail.com" target="_blank" rel="noreferrer noopener"><i class="fas fa-envelope"></i><p>Email</p></a></li></ul>
             </ul>
-        </footer>
-    </div>
+    </footer>
 
-
-    
-    <script src="js/ScrollMagic.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="js/ScrollMagic.min.js"></script>
     <script src="js/animation.gsap.min.js"></script>
     <script src="js/TimelineLite.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/CSSPlugin.min.js"></script>
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>

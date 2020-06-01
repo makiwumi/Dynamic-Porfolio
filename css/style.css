@@ -1,3 +1,4 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,347 +6,204 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 html {
     scroll-behavior: smooth;
+    background-color: #f2f2f2;
 }
 
-/* important used to override bootstrap */
-body {
-    background-color: #212121 !important;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    line-height: 1.6;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
-   
-    /* css smooth scroll */
-}
-
-.navbar {
-    background-color: tomato;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 60px;
-    background: rgba(0, 0,0, 0);
-}
-
-.navbar h1 {
-    color: #f4f4f4;
-}
-.navbar ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.navbar ul li{
-  list-style: none;
-  margin-left: 30px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #f4f4f4;
-}
-
-.navbar ul li a:hover{
-    color: salmon;
-}
-
-section{
+.section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     width: 100%;
     height: 100vh;
 }
 
-/* .main-title-section,
-.work-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: blue;
+/* Navigation */
+.navbar-custom {
+	padding-top: 0.375rem;
+	padding-bottom: 0.375rem;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
+	transition: all 0.2s;
+}
+
+/* Size of logo text */
+.navbar-custom .navbar-brand {
+	font-size: 20px;
+}
+
+/* margins for the links in nav bar */
+.navbar-custom .navbar-nav {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
+.navbar-custom .nav-item .nav-link {
+	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s ease;
 }
 
-
-
-header h1,
-header a,
-.text p,
-.about h1,
-.skills h1,
-.work h1,
-.contact h1 {
-    color: violet;
-}
-
-li {
-    list-style: none;
-    margin-left: 30px;
-}
-
-a {
-    text-decoration: none;
-    font-size: 12px;
-    text-transform: uppercase;
-    position: relative;
-    top:50%;
-    bottom: 50%;
-    transform: translateY(-50%);
-}
-
-.main-title-section h1{
-    font-family: fantasy;
-    color: yellow;
-}
-.main-title-section {
-    height: calc(100vh - 81.6px);
-} */
-
-/* block reveal of  title page */
-span{
-
-
-}
-/* .about {
+/* Front Page Header */
+.header {
+    background-size: cover;
+    background-color: pink;
     height: 100vh;
-    margin-top: 100px;
-} */
-/* h1 are both on the left top */
-/* .about h1,
-.work h1 {
-    font-size: 10rem;
-    z-index: 0;
-    opacity: .2;
-} */
+}
 
-/* shadow falling on left side */
-/* .about-info {
-    max-width: 900px;
-    background-color: turquoise;
-    box-shadow: 0 0 1.2rem black;
-    padding: 50px;
-    top: -70px;
-    left: 50%;
-    right:50%;
-    transform: translateX(-50%);
-    z-index: 1;
-} */
+.header .header-content {
+	padding-top: 8rem;
+	padding-bottom: 2.125rem;
+	text-align: left;
+}
 
-/* .about-info p {
-    font-size: 1.3rem;
+.header .text-container {
+    margin-bottom: 3rem;
     color: white;
+}
+
+.text-container h1 {
+    font-size: 100px;
+    line-height: 1.1;
+}
+
+
+/* All containers */
+
+/* .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 } */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* html {
-    scroll-behavior: smooth;
+/* About page */
+#about {
+    background: #f2f2f2;
+    height: 100vh; 
 }
 
-body {
-    margin: 0;
-    padding: 0;
-
-}
-
-.my-navbar {
-    background: black;
-    border-radius: 0;
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
     border: 0;
 }
-
-.my-navbar > .navbar-brand {
-    color:white;
-}
-
-#section1{
-    height: 700px;
-    background: red;
-    display: inline-block;
+.about-img {
     width: 100%;
 }
 
-#section2{
-    height: 700px;
-    background: yellow;
-    display: inline-block;
-    width: 100%;
+
+#about h1 {
+    font-size: 10rem;
+    opacity: 50%;
+    color: tomato;
 }
 
-#section3{
-    height: 700px;
-    background: blue;
-    display: inline-block;
-    width: 100%;
+.about-line {
+    height: 2px;
+    width: 150px;
+    background: #F24259;
+    margin-bottom: 30px;
+}
+#about p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 0;
+    margin-bottom: 19px;
 }
 
-#section4{
-    height: 700px;
-    background: black;
-    display: inline-block;
-    width: 100%;
-} */
 
-
-
-
-
-
-
-
-
-
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: fantasy;
-    background-color: #212121
+/* skills page, language icons */
+#skills{
+    background: #f2f2f2;
+    padding: 80px;
+   
 }
 
-#homePage,
-#aboutPage,
-#porfolioPage,
-#contactPage {
+#skills h1 {
+    font-size: 10rem;
+    opacity: 50%;
+    color: tomato;
+
+}
+
+.line{
+    height: 2px;
+    width: 150px;
+    background: #F24259;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* works page */
+#work h1 span {
+    font-size: 10rem;
+    opacity: 50%;
+    color: tomato;
+}
+
+#work{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 100%;
-    flex-direction: column;
-    position: absolute;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    margin-top: 50px;
-    padding: 10px 30px;
-    border: 1px solid white;
+.card {
+    border: 1px solid red;
+    border-radius: .25rem;
 }
 
-#homePage{
-    background-color: #212121;
+.bg-img{
+    background-size: cover;
+    min-height: 180px;
+    background-position: center;
+    background-color: #ccc;
 }
-#aboutPage {
-    background-color: #212121;
-}
-#porfolioPage {
-    background-color: #212121;
-}
-#contactPage {
-    background-color: #212121;
-} */
 
-/* .container{
-    width: 100%;
+.content {
+    padding: 15px;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid #2196F3;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: .25rem;
+}
+
+/* contact page */
+
+#contact h1
+
+#contact{
+    background: greenyellow;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 
-.container > .box {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
 }
-
-.container > .box > .title {
-    width:200%;
-    position: relative;
-    height: 50px;
-
+#portfolioP span{
+    padding: 10 px 20px 10px 20px;
 }
-
-.container > .box > .title > .block {
-    width: 2%;
-    height: inherit;
-    background-color: #ffb510;
-    position: absolute;
-    animation: mainBlock 2s cubic-bezier(.74, .06,.4, .92) forwards;
+#portfolioP hr{
+    border-width: 2px;
+    margin-top: 6px;
 }
-
-.container > .box > .title > .block > h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#fff;
-    font-size: 32px;
-    -webkit-animation: ease-in 2s forwards;
-    -o-animation: ease-in 2s forwards;
-    animation: ease-in 2s forwards;
-    animation-delay: 1.6s;
-    opacity: 0;
-}
-
-.container > .box > h1 > span{
-    color: #ffb510
-}
-
-.container > .box > .role {
-    width: 100%;
-    position: relative;
-    height: 30px;
-    margin-top: -10px; 
-    display: flex;
-    align-items: center;
-}
-
-.container > .box > .role > .block {
-    width: 0%;
-    height: inherit;
-    background: #e91e63;
-    position:absolute;
-    animation: secBlock 2s cubic-bezier(.74,.06,.4,.92);
-}
-
-.container > .box > .role > p {
-    -webkit-animation: secFadeIn 2s forwards;
-    -o-animation: secFadeIn 2s forwards;
-    animation: secFadeIn 2s forwards; 
-    animation-delay: 3.2s;
-    color: red;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 12px;
-} */
